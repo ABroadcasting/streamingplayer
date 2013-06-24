@@ -5,6 +5,7 @@
 # @copyright	2013 by i-SHCP
 # @author		Vilaliy Zhukov <dragonzx@yandex.ru>
 # @license		http://www.gnu.org/licenses/gpl-2.0.html GPL v2
+# @version		1.0.2
 #
 # Usage: playlist.php?name=playlist&pltype=m3u&stream=myradio.tld:8000/myradio
 
@@ -49,7 +50,7 @@ print("<ASX version = \"3.0\">
 #wpl/smil
 if($pltype == "wpl" or $pltype == "smil")
 {
-if($pltype == "wpl") //The difference
+if($pltype == "smil") //The difference
 {
 print("<smil xmlns=\"http://www.w3.org/2001/SMIL20/Language\">");
 } 
