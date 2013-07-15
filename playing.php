@@ -8,6 +8,8 @@ $stat->getfile($stream_admin, $stream_password, $stream_server, $stream_port);
 $stat->parsefile();
 $stat->currentmount();
 	//Output screen
+	if (strlen ($stat->current['title']) <= 2){$stat->current['title']='Unknown - Unknown';}
+	if (strlen ($current_dj) <= 2){$current_dj='Unknown DJ';}
 	$current_dj = $stat->current['server_description'];
   if ($stat->current['mount_name'] == $stream_nonstop){
 #echo 'mount point: <b>'.$point_name.'</b><br>';
