@@ -19,5 +19,4 @@ $stat->currentmount();
 	{
 	echo '<br><font color="red"><b>On air</b></font><br><div style="margin-top:2px";><font "color="blue"><b>'.$current_dj.'</b></font></div><div style="margin-top:2px";><b>'. $stat->current['title'].'</b></div><br>';
 	}
- 
 ?>
