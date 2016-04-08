@@ -19,7 +19,7 @@ switch ($type){
 	case audio: break;
 	case video: break;
 	default: $type="audio"; break;
-}
+};
 if($name == ""){$name="playlist";};
 
 #Generating output
@@ -37,7 +37,7 @@ $smilbody="
         </seq>
     </body>
 </smil>";
-case ($pltype){
+switch ($pltype){
 	case m3u: $output=$stream; break;
 	case ram: $output=$stream; break;
 	case asx: $output="<ASX version = \"3.0\">
@@ -47,8 +47,8 @@ case ($pltype){
 </ASX>"; 
 break;
 	case wpl: $output="<?wpl version=\"1.0\"?>
-<smil>"$smilbody; break;
-	case smil: "<smil xmlns=\"http://www.w3.org/2001/SMIL20/Language\">"$smilbody; break;
+<smil>" + $smilbody; break;
+	case smil: "<smil xmlns=\"http://www.w3.org/2001/SMIL20/Language\">" + $smilbody; break;
 	case zpl: $output="ac=$stream
 nm=$stream
 dr=-1
