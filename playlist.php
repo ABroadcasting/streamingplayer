@@ -84,7 +84,7 @@ moviename=\"$name\"
 src=\"$stream\"
 />";
 	break;
-	default: $type="m3u"; $output=$stream; break;
+	default: $pltype="m3u"; $output=$stream; break;
 };
 
 #Making the file
