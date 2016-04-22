@@ -8,6 +8,7 @@
 # @version		1.1.0
 #
 # Usage: playlist.php?name=playlist&pltype=m3u&stream=myradio.tld:8000/myradio
+ini_set('display_errors', '0');
 
 #define defaults
 $type="audio";
